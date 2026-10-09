@@ -1,0 +1,17 @@
+{
+  "name": "Kronos (prueba en la nube)",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
+  "hostRequirements": {
+    "cpus": 4,
+    "memory": "8gb"
+  },
+  "postCreateCommand": "pip install --index-url https://download.pytorch.org/whl/cpu torch && pip install -r requirements.txt",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-python.python"]
+    },
+    "codespaces": {
+      "openFiles": ["CODESPACES.md"]
+    }
+  }
+}
